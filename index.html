@@ -5,24 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./img/flower-pot.png" type="image/x-icon">
-          <!-- link para imagenes devicon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-          <!-- link de icono fontawesome -->
-          <script src="https://kit.fontawesome.com/6d24d35dfb.js" crossorigin="anonymous"></script>
-          <!-- aqui debo agregar fuentes -->
-          <!-- aqui debo agregar un CSS -->
+    <script src="https://kit.fontawesome.com/6d24d35dfb.js" crossorigin="anonymous"></script>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
     <title>Portafolio Marla</title>
 </head>
 <body>
     <!-- comienzo header -->
     <header>
-        <nav>
+        <nav class="container-nav">
             <!-- menú de navegación -->
-            <ul>
+            <ul class="nav-ul">
                 <li><a href="#about">HOLA</a></li>
                 <li><a href="#skills">CONOCIMIENTOS</a></li>
                 <li><a href="#projects">PROYECTOS</a></li>
-                <li><a href="#contact">CONTACTOS</a></li>
+                <li><a href="#contact" class="contacto-link">CONTACTO</a></li>
             </ul>
             <!-- fin de menú de navegación -->
         </nav>
@@ -30,59 +31,63 @@
     <!-- Fin de header -->
     <main>
         <!-- sección about me -->
-            <article>
-                <span>¡Hola! Soy</span> 
-                <h1>Marla Martínez</h1>
-                <p>Desarrolladora Frontend etc etc etc</p>
-                <a href="#projects">Lo que hago</a>
-            </article>
-            <figure>
-                <img src="./img/undraw_appreciation_re_n3c1.svg" alt="imagen-mujer-corazon" height="250" width="250">
+        <article class="presentation" id="hola">
+            <section class="presentation_hola">
+                <p class="presentation_saludo">¡Hola! Soy</p> 
+                <h1 class="presentation_name">Marla Martínez</h1>
+                <p>Desarrolladora Frontend</p>
+                <button class="presentation_button">lo que hago</button>
+            </section>
+            <figure class="presentation_imagen">
+                <img src="./img/undraw_designer_girl_re_h54c.svg">
             </figure>
-        </section>
+            </section>
+        </article>
         <!-- Fin sección about me -->
         <!-- Sección conocimientos -->
-        <section id="skills">
+        <section class="conocimientos" id="conocimientos">
+            <section class="conocimientos_tittle">
             <h2>Mis Conocimientos</h2>
             <p>Estos son los conocimientos que voy a adquirir en el desarrollo del curso de Frontend de Adaitw</p>
-            <section class="skills-container">
-            <figure>
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="100" width="100"  alt=""
+            </section>
+            <section class="conocimientos_imagenes">
+            <figure class="conocimientos_card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="80" width="80"  alt=""
                 />
                 <figcaption>
                     <span>HTML 5</span>
                 </figcaption>
-            </figure>
-            <figure>                
-             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg" height="100" width="100" alt="imagen html"
+            </figure class="conocimientos_card">
+            <figure class="conocimientos_card">                
+             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg" height="80" width="80" alt="imagen html"
              />
             <figcaption>
                 <span>CSS 3</span>
             </figcaption>
-            </figure>
-            <figure>
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" height="100" width="100" alt="imagen sass"
+            </figure class="conocimientos_card">
+            <figure class="conocimientos_card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" height="80" width="80" alt="imagen sass"
                 />
             <figcaption>
                 <span>Sass</span>
             </figcaption>
             </figure>
-            <figure>
-                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" height="100" width="100" alt="imagen javascript"
+            <figure class="conocimientos_card">
+                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" height="80" width="80" alt="imagen javascript"
                  />
             <figcaption>
                 <span>JavaScript</span>
             </figcaption>
             </figure>
-            <figure>
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="100" width="100" alt="imagen react"
+            <figure class="conocimientos_card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="80" width="80" alt="imagen react"
                 />
                 <figcaption>
                     <span>React</span>
                 </figcaption>
             </figure>
-            <figure>                
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg" height="100" width="100" alt="imagen git"
+            <figure class="conocimientos_card">                
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg" height="80" width="80" alt="imagen git"
                 /> 
                 <figcaption>
                    <span>GIT</span>
@@ -92,83 +97,85 @@
         </section>
         <!-- Fin sección conocimientos -->
         <!-- Sección quote -->
-        <section class="quote-container">
+        <section class="quote_container">
             <i class="fa-solid fa-quote-right"></i>
             <blockquote cite="#">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium optio incidunt, obcaecati possimus magni aut nulla molestiae, nostrum labore quidem quis impedit dicta minima nihil laudantium temporibus architecto sunt? Quaerat.</p>
-                <p>Alguien escribió esto</p>
+                <h3>Someone</h3>
             </blockquote>
         </section>
         <!-- Fin quote -->
         <!-- Sección mis proyectos -->
-        <section id="projects">
-            <h2>Mis Proyectos</h2>
-            <p>Estos son los proyectos que voy a desarrollar a lo largo del curso</p>
-            <section class="projects-container">
-                <article class="project-card">
+        <section class="projects" id="projects">
+            <section class="projects_tittle">
+                <h2>Mis Proyectos</h2>
+                <p>Estos son los proyectos que voy a desarrollar a lo largo del curso</p>
+            </section>
+            <section class="projects_cards">
+                <article class="project_card">
                     <a href="#" target="_blank">
                         <figure>
-                            <img src="" alt="Proyecto 1">
+                            <img src="./img/portafolio.svg" alt="Portafolio" height="250px" width="280px">
                             <figcaption>
                              <span>Portafolio</span>
                             </figcaption>
                         </figure>
                     </a>
                 </article>
-                <article class="project-card">
+                <article class="project_card">
                     <a href="#" target="_blank">
                         <figure>
-                            <img src="" alt="Proyecto 2">
+                            <img src="./img/generador_memes.svg" alt="Generador de memes" height="250px" width="280px">
                             <figcaption>
                              <span>Generador de memes</span>
                             </figcaption>
                         </figure>
                     </a>
                 </article>
-                <article class="project-card">
+                <article class="project_card">
                     <a href="#" target="_blank">
                         <figure>
-                            <img src="" alt="Proyecto 3">
+                            <img src="./img/match.svg" alt="Match 3" height="250px" width="280px">
                             <figcaption>
                              <span>Match 3</span>
                             </figcaption>
                         </figure>
                     </a>
                 </article>
-                <article class="project-card">
+                <article class="project_card">
                     <a href="#" target="_blank">
                         <figure>
-                            <img src="" alt="Proyecto 4">
+                            <img src="./img/controlador_gastos.svg" alt="Controlador de gastos" height="250px" width="280px">
                             <figcaption>
                              <span>Controlador de gastos</span>
                             </figcaption>
                         </figure>
                     </a>
                 </article>
-                <article class="project-card">
+                <article class="project_card">
                     <a href="#" target="_blank">
                         <figure>
-                            <img src="" alt="Proyecto 5">
+                            <img src="./img/calendar.svg" alt="Administrador de reuniones" height="250px" width="280px">
                             <figcaption>
                              <span>Administrador de reuniones</span>
                             </figcaption>
                         </figure>
                     </a>
                 </article>
-                <article class="project-card">
+                <article class="project_card">
                     <a href="#" target="_blank">
                         <figure>
-                            <img src="" alt="Proyecto 6">
+                            <img src="./img/todo_app.svg" alt="Todo app" height="250px" width="280px">
                             <figcaption>
                              <span>Todo app</span>
                             </figcaption>
                         </figure>
                     </a>
                 </article>
-                <article class="project-card">
+                <article class="project_card">
                     <a href="#" target="_blank">
                         <figure>
-                            <img src="" alt="Proyecto 7">
+                            <img src="./img/movies.svg" alt="Buscador de películas" height="250px" width="280px">
                             <figcaption>
                              <span>Buscador de películas</span>
                             </figcaption>
@@ -178,12 +185,11 @@
             </section>
             <!-- Fin sección mis proyectos -->
         </section>
-        <!-- esto queda pendiente CONTACTO -->
-        <section class="section contact-section" id="contact">
-            <div class="column">
-              <div class="contact">
+        <!-- CONTACTO -->
+        <div class="container-contact">
+        <section class="contact-section" id="contact">
                 <section class="contact-column">
-                  <h2 class="section-title">Contactame</h2>
+                  <h2 class="section-title">Contáctame</h2>
                   <p class="section-description">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quo
                     nobis voluptatum tenetur! Id, nesciunt? Modi quasi repudiandae
@@ -191,73 +197,69 @@
                     numquam eligendi.
                   </p>
                   <!-- lista de RRSS -->
-                  <section class="Links de redes sociales">
-                    <ul>
+                    <section class="section-redes">
+                     <ul>
                         <li class="twitter">
                             <a href="#">
-                                <i>
-                                    <!-- agregar icono de twitter -->
-                                </i>@Adalove
+                                <i class="devicon-twitter-original" style="color: #4e3abf;"></i>@marlacamilaa
                             </a>
                         </li>
                         <li class="github">
                             <a href="#">
-                                <i>
-                                    <!-- agregar icono de Github -->
-                                </i>AdaLovelace
+                                <i class="devicon-github-original" style="color: #4e3abf;"></i>marlacamilaa
                             </a>
                         </li>
                         <li class="linked">
                             <a href="#">
-                                <i>
-                                    <!-- agregar icono de linkend -->
-                                </i>Adalovelace</a>
+                                <i class="devicon-linkedin-plain" style="color: #4e3abf;"></i>marlacamilaa
+                            </a>
                         </li>
                         <li class="gmail">
                             <a href="#">
-                                <i>
-                                    <!-- agregar icono de gmail -->
-                                </i>adalovelace@gmail.com</a>
+                                <i class="fi fi-rr-envelope" style="color: #4e3abf;"></i>camim4rr@gmail.com
+                            </a>
                         </li>
-                    </ul>
-                  </section>                        
-                </section>
+                     </ul>
+                    </section>  
+                </section>                        
                 <section class="contact-column">
-                    <h2>Escribime</h2>
+                    <h2 class="section-title">Escríbeme</h2>
+        <!-- esto es para rellenar el formulario --> 
+                <form>
+                    <article class="container-exeption">
                         <div class="form-control">
                           <label for="firstname">Nombre</label>
-                          <!-- esto es para rellenar el formulario -->
-                          <input
+                            <input
                             type="text"
                             name="Nombre"
                             id="firtsname"
                             class="input-firtsname input-control"
-                            placeholder="Ej.: Ada"
+                            placeholder="Ej.: Marla"
                             aria-label="Nombre"
-                            required
+                            required 
                             />
                         </div>
                         <div class="form-control">
                             <label for="lastname">Apellido</label>
-                            <!-- esto es para rellenar el formulario -->
                             <input
                               type="text"
                               name="Apellido"
                               id="lastname"
                               class="input-lastname input-control"
-                              placeholder="Ej.: Lovelace"
+                              placeholder="Ej.: Martinez"
                               aria-label="Apellido"
                               required
                               />
-                          </div>
-                          <div class="form-control">
+                        </div>
+                    </article>
+                        <div class="form-control">
                             <label for="email">Email</label>
                             <input
                               type="email"
                               name="Email"
                               id="email"
                               class="input-control"
-                              placeholder="p. ej.: ada.lovelace@gmail.com"
+                              placeholder="Ej.: camim4rr@gmail.com"
                               aria-label="Email"
                               required
                             />
@@ -267,7 +269,7 @@
                             <textarea
                               name="Mensaje"
                               id="message"
-                              cols="30"
+                              cols="20"
                               rows="10"
                               class="input-control"
                               placeholder="Escriba un mensaje aquí"
@@ -275,25 +277,41 @@
                               required
                             ></textarea>
                         </div>
-                    <button type="submit" class="contact-send-btn button">
-                        Enviar
-                    </button>
-                </section>
+                            <button class="button">Enviar</button>
+                </form>
+            </section>
+        </div>
         <!-- fin de contacto -->
     </main>
     <!-- comienzo de footer -->
     <footer>
-        <ul>
+        <ul class="list_all">
             <li><a href="#about">HOLA</a></li>
             <li><a href="#skills">CONOCIMIENTOS</a></li>
             <li><a href="#projects">PROYECTOS</a></li>
-            <li><a href="#contact">CONTACTOS</a></li>
+            <li><a href="#contact">CONTACTO</a></li>
         </ul>
-        <ul>
-            <li><a href=""></a>Twitter</li>
-            <li><a href=""></a>Ginthub</li>
-            <li><a href=""></a>LinkIn</li>
-            <li><a href="mailto:camim4rr@gmail.com" >Mail</a></li>           
+        <ul class="list_rrss">
+            <li>
+                <a href="#">
+                    <i class="devicon-twitter-original" style="color: #4e3abf;"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="devicon-github-original" style="color: #4e3abf;"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="devicon-linkedin-plain" style="color: #4e3abf;"></i>
+                </a>
+            </li>
+            <li>
+                <a href="mailto:camim4rr@gmail.com">
+                    <i class="fi fi-rr-envelope" style="color: #4e3abf;"></i>
+                </a>
+            </li>           
         </ul>
         <p>Hecho con 💜 por Marla</p>
     </footer>
