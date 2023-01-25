@@ -17,7 +17,12 @@ body{
     justify-content: flex-end;
     padding: 20px;
     box-shadow: -4px 14px 31px 3px #00000017;
+    background-color: #ffffff;
+    width: 100vw;
+    position: fixed;
+    top: 0;
 }
+
 .nav-ul{
     display: flex;
     align-items: center;
@@ -54,6 +59,7 @@ a{
     flex-direction: row;
     height: 90vh;
     padding: 20px 0px;
+    margin: 50px 0px;
 }
 
 .presentation_hola{
@@ -98,7 +104,7 @@ a{
     padding: 16px 0px;
     text-transform: uppercase;
     border: none;
-    width: 200px; 
+    width: 200px;
     font-size: 15px;
     margin: 20px 0px;
 }
@@ -207,7 +213,7 @@ a{
 }
 
 .projects_cards figcaption {
-    font-size: 15px; 
+    font-size: 15px;
 }
 
 /* seccion contacto */
@@ -256,13 +262,8 @@ a{
 /* formulario */
 
 form{
-    display: flex;  
-    flex-wrap: wrap;
-}
-
-.container-exeption{
     display: flex;
-    width: 85vh;
+    flex-wrap: wrap;
 }
 
 label {
@@ -329,3 +330,4 @@ footer ul{
     font-size: 15px;
 }
 
+/* medias breakpoints */
