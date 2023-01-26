@@ -332,7 +332,7 @@ footer ul{
 
 /* medias breakpoints TABLET / MOBILE */
 
-@media (max-width: 992px) {
+@media (max-width: 992px){
     /* presentacion */
     .container-nav{
         display: none;
@@ -384,8 +384,13 @@ footer ul{
     }
 
     /* contacto */
+    .container-contact{
+        width: 100vw;
+    }
+
     .contact-column{
-        padding: 0px 40px;
+        width: 50%;
+        padding: 0 40px;
     }
 
     .button{
@@ -394,3 +399,78 @@ footer ul{
 }
 
 /* MOBILE */
+
+@media (max-width: 661px) {
+
+    .conocimientos{
+        padding: 90px 40px 100px;
+    }
+    
+    .conocimientos_tittle{
+        width: 80vw;
+    }
+
+    .conocimientos_tittle h2{
+        width: 80vw;
+    }
+    
+    .conocimientos_imagenes{
+        height: 100%;
+    }
+    
+    .conocimientos_card{
+        width: 60%;
+    }
+
+    /* contacto */
+
+    .section-redes ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .section-redes a{
+        display: flex;
+        justify-items: flex-start;
+        align-items: center;
+        width: 200px;
+        padding: 0;
+    }
+
+    .container-contact{
+        background-color: #ffffff;
+        padding: 0px 0px 80px;
+    }
+
+    .contact-section{
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .contact-column{
+        width: 90vw;
+        height: 50%;
+    }
+
+    /* footer */
+    footer{
+        height: 250px;
+    }
+
+    .list_all{
+        display: none;
+    }
+
+    .list_rrss li{
+        padding: 10px 5px;
+    }
+
+    .list_rrss a{
+        padding: 10px;
+    }
+    
+    .list_rrss i{
+        font-size: 17px;
+        line-height: 0;
+    }
+}
