@@ -330,26 +330,26 @@ footer ul{
     font-size: 15px;
 }
 
-/* medias breakpoints ESCRITORIO / TABLET / MOBILE */
+/* medias breakpoints TABLET / MOBILE */
 
 @media (max-width: 992px) {
+    /* presentacion */
     .container-nav{
         display: none;
     }
 
     .presentation{
-
         width: 100%;
         height: 100%;
         flex-direction: column;
-        margin: 110px 0px;
+        margin: 50px 0px;
     }
 
     .presentation_imagen img {
-        width: 80%;
+        width: 60%;
         max-width: 700px;
         margin: 0 auto;
-        padding: 100px 0;
+        padding-top: 90px;
     }
 
     .presentation_hola{
@@ -357,4 +357,40 @@ footer ul{
         margin-top: 50px;
         line-height: 2.0;
     }
+/* conocimientios */
+    .conocimientos{
+        padding: 110px 40px 250px;
+    }
+
+    .conocimientos_imagenes{
+        width: 100vw;
+        height: 60vh;
+        justify-content: center;
+        padding: 0 30px;
+    }
+
+    .conocimientos_card img{
+        width: 110px;
+        height: 110px;
+    }
+
+    /* Proyectos */
+
+    .projects_cards{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px;
+        justify-content: space-around;
+    }
+
+    /* contacto */
+    .contact-column{
+        padding: 0px 40px;
+    }
+
+    .button{
+        margin: 10px;
+    }
 }
+
+/* MOBILE */
