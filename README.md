@@ -8,6 +8,6 @@ https://marlacamilaa.github.io/proyecto-portafolio/
 ------------
 
 Mi contacto:
-[Instagram](https://www.instagram.com/ "Instagram")
+[Instagram](https://www.instagram.com/marlacamilaa "Instagram")
 
 😊
